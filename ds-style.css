@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ds-container img {
+    width: 100%;
+    height: auto;
+}
+
+.ds-title {
+    font-size: 1.5rem;
+}
+
+.ds-description {
+    font-size: 1rem;
+}
+
+.ds-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ds-card {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: scale 500ms ease-in-out;
+}
+
+.ds-card:hover {
+    transform: scale(1.01);
+}
+
+.ds-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 1rem;
+
+}
+
